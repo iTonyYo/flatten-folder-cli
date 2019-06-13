@@ -10,14 +10,15 @@ import flattenFolder from './flattenFolder';
   try {
     const cli = meow(`
       使用方式
-        $ flattenFolder 选项 [...]
+        $ flatten-folder 选项 [...]
 
       选项
         --twd, -d, 目标目录，默认：'process.cwd()'
         --version, -V, 查看版本号
+        --help, -h, 查看帮助
 
       示例
-        $ flattenFolder
+        $ flatten-folder
     `, {
       flags: {
         twd: {
