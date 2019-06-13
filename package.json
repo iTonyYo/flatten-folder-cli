@@ -18,7 +18,7 @@
     "esm/**/*.js",
     "src/**/*.js"
   ],
-  "name": "flatten-folder",
+  "name": "flatten-folder-cli",
   "description": "递归扁平化指定文件夹内所有文件。",
   "dependencies": {
     "async": "^3.0.1",
