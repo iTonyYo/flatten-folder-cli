@@ -5,7 +5,6 @@ import trash from 'trash';
 
 import deepTraversalFolder from './deepTraversalFolder';
 
-// 待办： 将检索到的所有文件夹异步删除
 // 待办： 重命名函数名
 async function main({from, to}) {
   const { files, dirs } = await deepTraversalFolder({
