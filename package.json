@@ -70,11 +70,11 @@
     "url": "https://github.com/iTonyYo"
   },
   "repository": {
-    "url": "git@github.com:iTonyYo/flatten-folder.git",
+    "url": "git@github.com:iTonyYo/flatten-folder-cli.git",
     "type": "git"
   },
-  "homepage": "https://github.com/iTonyYo/flatten-folder",
-  "bugs": "https://github.com/iTonyYo/flatten-folder/issues",
+  "homepage": "https://github.com/iTonyYo/flatten-folder-cli",
+  "bugs": "https://github.com/iTonyYo/flatten-folder-cli/issues",
   "publishConfig": {
     "access": "public"
   },
