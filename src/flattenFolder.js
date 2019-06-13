@@ -5,7 +5,6 @@ import trash from 'trash';
 
 import deepTraversalFolder from './deepTraversalFolder';
 
-// 待办： 重命名函数名
 async function main({from, to}) {
   const { files, dirs } = await deepTraversalFolder({
     from,
