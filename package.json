@@ -1,0 +1,82 @@
+{
+  "bin": {
+    "flatten-folder": "esm/cli.js"
+  },
+  "scripts": {
+    "build": "npx babel-node ./scripts/clean-built && npx babel-node ./scripts/build",
+    "clean": "npx babel-node ./scripts/clean",
+    "license": "npx babel-node ./scripts/license",
+    "reprepare": "npx babel-node ./scripts/re-prepare",
+    "lint": "npx eslint --cache ./src/**/*.js",
+    "test": "cross-env NODE_ENV=test npx babel-node ./scripts/test",
+    "changelog": "npx auto-changelog -p"
+  },
+  "engines": {
+    "node": ">=10.13.0"
+  },
+  "files": [
+    "esm/**/*.js",
+    "src/**/*.js"
+  ],
+  "name": "flatten-folder",
+  "description": "递归扁平化指定文件夹内所有文件。",
+  "dependencies": {
+    "async": "^3.0.1",
+    "deepmerge": "^3.2.0",
+    "meow": "^5.0.0",
+    "move-file": "^1.2.0",
+    "redent": "^3.0.0",
+    "trash": "^6.0.0",
+    "update-notifier": "^3.0.0"
+  },
+  "private": false,
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "chai": "^4.2.0",
+    "chalk": "^2.4.2",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.16.0",
+    "execa": "^1.0.0",
+    "fast-glob": "^2.2.7",
+    "license-checker": "^25.0.1",
+    "listr": "^0.14.3",
+    "make-dir": "^3.0.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1",
+    "p-map": "^2.1.0",
+    "write-file-atomic": "^3.0.0"
+  },
+  "keywords": [
+    "folder",
+    "文件夹",
+    "flat",
+    "扁平化",
+    "cli",
+    "脚手架",
+    "scaffold",
+    "工具",
+    "tool",
+    "oopsunome"
+  ],
+  "version": "0.0.0",
+  "author": {
+    "name": "iyowei",
+    "email": "swzyocowboy@icloud.com",
+    "url": "https://github.com/iTonyYo"
+  },
+  "repository": {
+    "url": "git@github.com:iTonyYo/flatten-folder.git",
+    "type": "git"
+  },
+  "homepage": "https://github.com/iTonyYo/flatten-folder",
+  "bugs": "https://github.com/iTonyYo/flatten-folder/issues",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT"
+}
