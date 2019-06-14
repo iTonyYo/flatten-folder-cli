@@ -10,7 +10,7 @@ import execa from 'execa';
       '@babel/register',
       '--no-opts',
       '--no-package',
-      'to/**/?(*.)+(spec|test).[tj]s?(x)',
+      'src/**/?(*.)+(spec|test).[tj]s?(x)',
     ]);
 
     console.log(result.stdout);

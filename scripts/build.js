@@ -11,7 +11,10 @@ const resolveRoot = relativePath => resolve(
 );
 
 (async () => {
-  const src = fg(['src/**/*.js', '!src/**/*.test.js']);
+  const src = fg([
+    'src/**/*.js',
+    '!src/**/(*.)+(benchmark|test).js',
+  ]);
 
   await pMap(
     await src,
