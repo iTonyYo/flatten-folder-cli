@@ -17,8 +17,6 @@ var _deepTraversalFolder = _interopRequireDefault(require("./deepTraversalFolder
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// 待办： 将检索到的所有文件夹异步删除
-// 待办： 重命名函数名
 async function main({
   from,
   to

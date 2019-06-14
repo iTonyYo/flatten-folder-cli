@@ -2,7 +2,7 @@ import { assert } from 'chai';
 import getWorkingDirectory from './getWorkingDirectory';
 
 setTimeout(() => {
-  suite('getWorkingDirectory()', () => {
+  suite('getWorkingDirectory(twd)', () => {
     test("未手动提供目标工作目录", () => {
         const { twd } = getWorkingDirectory();
         assert.deepEqual(twd, process.cwd());

@@ -15,6 +15,8 @@ var _each = _interopRequireDefault(require("async/each"));
 
 var _deepmerge = _interopRequireDefault(require("deepmerge"));
 
+var _shouldExclude = _interopRequireDefault(require("./shouldExclude"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const pReadir = (0, _util.promisify)(_fs.readdir);
@@ -46,12 +48,14 @@ async function deepTraversalFolder({
     file: []
   };
   const dxclusions = (0, _deepmerge.default)(defaultExclusions, exclude);
+  const dirExclusions = getDirExclusionRegExps(dxclusions.dir);
+  const fileExclusions = getFileExclusionRegExps(dxclusions.file);
   const root = await pReadir(from, {
     withFileTypes: true
   });
   await (0, _each.default)(root, async content => {
     if (content.isDirectory()) {
-      if (shouldExclude(content.name, dxclusions.dir)) {
+      if ((0, _shouldExclude.default)(content.name, dirExclusions)) {
         return;
       }
 
@@ -63,7 +67,7 @@ async function deepTraversalFolder({
       return;
     }
 
-    if (shouldExclude(content.name, dxclusions.file)) {
+    if ((0, _shouldExclude.default)(content.name, fileExclusions)) {
       return;
     }
 
@@ -75,25 +79,16 @@ async function deepTraversalFolder({
     dirs: dirs.getAll()
   };
 }
-/**
- * 假设忽略规则: ['node_modules', '.vscode']
- * `every` 执行结果
- *
- * 针对不需要忽略的文件夹: scripts
- * `every` 执行结果: [true, true] => true
- *
- * 针对需要忽略的文件夹: node_modules
- * `every` 执行结果: [false, true] => false
- *
- * 即：`every` 执行结果为 false 时说明当前项是需
- * 要被忽略的
- */
 
+function getDirExclusionRegExps(dirExclusions) {
+  return dirExclusions.map(pat => {
+    return new RegExp(pat);
+  });
+}
 
-function shouldExclude(name, regexrs) {
-  return !regexrs.every(element => {
-    const regex = new RegExp(element);
-    return !regex.test(name);
+function getFileExclusionRegExps(fileExclusions) {
+  return fileExclusions.map(pat => {
+    return new RegExp(pat);
   });
 }
 

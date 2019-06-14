@@ -4,6 +4,8 @@ import path from 'path';
 import each from 'async/each';
 import deepmerge from 'deepmerge';
 
+import shouldExclude from './shouldExclude';
+
 const pReadir = promisify(readdir);
 
 const dirs = {
@@ -30,13 +32,16 @@ async function deepTraversalFolder({from, exclude}) {
   const defaultExclusions = {dir: [], file: []};
   const dxclusions = deepmerge(defaultExclusions, exclude);
 
+  const dirExclusions = getDirExclusionRegExps(dxclusions.dir);
+  const fileExclusions = getFileExclusionRegExps(dxclusions.file);
+
   const root = await pReadir(from, {
     withFileTypes: true,
   });
 
   await each(root, async (content) => {
     if (content.isDirectory()) {
-      if (shouldExclude(content.name, dxclusions.dir)) {
+      if (shouldExclude(content.name, dirExclusions)) {
         return;
       }
 
@@ -49,7 +54,7 @@ async function deepTraversalFolder({from, exclude}) {
       return;
     }
 
-    if (shouldExclude(content.name, dxclusions.file)) {
+    if (shouldExclude(content.name, fileExclusions)) {
       return;
     }
 
@@ -63,23 +68,15 @@ async function deepTraversalFolder({from, exclude}) {
   };
 }
 
-/**
- * 假设忽略规则: ['node_modules', '.vscode']
- * `every` 执行结果
- *
- * 针对不需要忽略的文件夹: scripts
- * `every` 执行结果: [true, true] => true
- *
- * 针对需要忽略的文件夹: node_modules
- * `every` 执行结果: [false, true] => false
- *
- * 即：`every` 执行结果为 false 时说明当前项是需
- * 要被忽略的
- */
-function shouldExclude(name, regexrs) {
-  return !regexrs.every((element) => {
-    const regex = new RegExp(element);
-    return !regex.test(name);
+function getDirExclusionRegExps(dirExclusions) {
+  return dirExclusions.map((pat) => {
+    return new RegExp(pat);
+  });
+}
+
+function getFileExclusionRegExps(fileExclusions) {
+  return fileExclusions.map((pat) => {
+    return new RegExp(pat);
   });
 }
 
