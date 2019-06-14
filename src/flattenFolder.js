@@ -9,7 +9,7 @@ async function main({from, to}) {
   const { files, dirs } = await deepTraversalFolder({
     from,
     exclude: {
-      dir: ['node_modules', '.vscode', 'doc', 'to', 'scripts'],
+      dir: ['node_modules', '.git', '.nyc_output'],
       file: [],
     },
   });
