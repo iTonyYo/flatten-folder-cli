@@ -16,7 +16,8 @@ import arrayWrap from './arrayWrap';
       选项
         --excludeFile, -xf, 定义要忽略的文件
         --excludeDir, -xd, 定义要忽略的文件夹
-        --twd, -d, 目标目录，默认：'process.cwd()'
+        --twd, -d, 可指定工作目录，默认：'process.cwd()'
+        --to, -t, 被扁平化文件的存放目录，默认：'process.cwd()'
         --version, -V, 查看版本号
         --help, -h, 查看帮助
 
@@ -24,6 +25,14 @@ import arrayWrap from './arrayWrap';
         $ flatten-folder
     `, {
       flags: {
+        twd: {
+          type: 'string',
+          alias: 'd',
+        },
+        to: {
+          type: 'string',
+          alias: 't',
+        },
         excludeFile: {
           type: 'string',
           alias: 'xf',
@@ -31,10 +40,6 @@ import arrayWrap from './arrayWrap';
         excludeDir: {
           type: 'string',
           alias: 'xd',
-        },
-        twd: {
-          type: 'string',
-          alias: 'd',
         },
         help: {
           type: 'boolean',
@@ -50,13 +55,13 @@ import arrayWrap from './arrayWrap';
     updateNotifier({ pkg: cli.pkg }).notify();
 
     const { flags } = cli;
-    const { twd, excludeDir, excludeFile } = flags;
+    const { to, twd, excludeDir, excludeFile } = flags;
 
     const workingDir = getWorkingDirectory(twd);
 
     await flattenFolder({
       from: workingDir.twd,
-      to: workingDir.twd,
+      to: to ? to : workingDir.twd,
       exclude: {
         dir: arrayWrap(excludeDir),
         file: arrayWrap(excludeFile),
