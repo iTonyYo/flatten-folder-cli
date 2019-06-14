@@ -5,17 +5,21 @@ import trash from 'trash';
 
 import deepTraversalFolder from './deepTraversalFolder';
 
-async function main({from, to}) {
+async function main({from = './', to = './', exclude}) {
   const { files, dirs } = await deepTraversalFolder({
     from,
-    exclude: {
-      dir: ['node_modules', '.git', '.nyc_output'],
-      file: [],
-    },
+    exclude: getExclusions(exclude),
   });
 
   await mv(files, to);
   await del(dirs);
+}
+
+function getExclusions(iptExclude) {
+  return {
+    dir: Array.isArray(iptExclude.dir) ? iptExclude.dir : [],
+    file: Array.isArray(iptExclude.file) ? iptExclude.file : [],
+  };
 }
 
 async function mv(files, to) {

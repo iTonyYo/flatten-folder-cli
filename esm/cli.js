@@ -9,6 +9,8 @@ var _getWorkingDirectory = _interopRequireDefault(require("./getWorkingDirectory
 
 var _flattenFolder = _interopRequireDefault(require("./flattenFolder"));
 
+var _arrayWrap = _interopRequireDefault(require("./arrayWrap"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (async () => {
@@ -18,6 +20,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         $ flatten-folder 选项 [...]
 
       选项
+        --excludeFile, -xf, 定义要忽略的文件
+        --excludeDir, -xd, 定义要忽略的文件夹
         --twd, -d, 目标目录，默认：'process.cwd()'
         --version, -V, 查看版本号
         --help, -h, 查看帮助
@@ -26,6 +30,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         $ flatten-folder
     `, {
       flags: {
+        excludeFile: {
+          type: 'string',
+          alias: 'xf'
+        },
+        excludeDir: {
+          type: 'string',
+          alias: 'xd'
+        },
         twd: {
           type: 'string',
           alias: 'd'
@@ -47,12 +59,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       flags
     } = cli;
     const {
-      twd
+      twd,
+      excludeDir,
+      excludeFile
     } = flags;
     const workingDir = (0, _getWorkingDirectory.default)(twd);
     await (0, _flattenFolder.default)({
       from: workingDir.twd,
-      to: workingDir.twd
+      to: workingDir.twd,
+      exclude: {
+        dir: (0, _arrayWrap.default)(excludeDir),
+        file: (0, _arrayWrap.default)(excludeFile)
+      }
     });
   } catch (error) {
     throw error;

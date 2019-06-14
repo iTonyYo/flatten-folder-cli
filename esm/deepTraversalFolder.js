@@ -39,45 +39,60 @@ const files = {
   }
 };
 
-async function deepTraversalFolder({
+async function main({
   from,
   exclude
 }) {
-  const defaultExclusions = {
+  await traversalFolder({
+    from,
+    exclude: getExclusions(exclude)
+  });
+  return {
+    files: files.getAll(),
+    dirs: dirs.getAll()
+  };
+}
+
+function getExclusions(iptExclude) {
+  const _default = {
     dir: [],
     file: []
   };
-  const dxclusions = (0, _deepmerge.default)(defaultExclusions, exclude);
-  const dirExclusions = getDirExclusionRegExps(dxclusions.dir);
-  const fileExclusions = getFileExclusionRegExps(dxclusions.file);
+  const nativeExclusions = (0, _deepmerge.default)(_default, iptExclude);
+  return {
+    dir: getDirExclusionRegExps(nativeExclusions.dir),
+    file: getFileExclusionRegExps(nativeExclusions.file)
+  };
+}
+
+async function traversalFolder({
+  from,
+  exclude
+}) {
   const root = await pReadir(from, {
     withFileTypes: true
   });
   await (0, _each.default)(root, async content => {
     if (content.isDirectory()) {
-      if ((0, _shouldExclude.default)(content.name, dirExclusions)) {
+      if ((0, _shouldExclude.default)(content.name, exclude.dir)) {
         return;
       }
 
       dirs.add(_path.default.join(from, content.name));
-      await deepTraversalFolder({
+      await traversalFolder({
         from: _path.default.join(from, content.name),
-        exclude: dxclusions
+        exclude
       });
       return;
     }
 
-    if ((0, _shouldExclude.default)(content.name, fileExclusions)) {
+    if ((0, _shouldExclude.default)(content.name, exclude.file)) {
       return;
     }
 
     files.add(_path.default.join(from, content.name));
     return;
   });
-  return {
-    files: files.getAll(),
-    dirs: dirs.getAll()
-  };
 }
 
 function getDirExclusionRegExps(dirExclusions) {
@@ -92,6 +107,6 @@ function getFileExclusionRegExps(fileExclusions) {
   });
 }
 
-var _default = deepTraversalFolder;
-exports.default = _default;
+var _default2 = main;
+exports.default = _default2;
 module.exports = exports.default;

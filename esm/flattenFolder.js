@@ -18,21 +18,26 @@ var _deepTraversalFolder = _interopRequireDefault(require("./deepTraversalFolder
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 async function main({
-  from,
-  to
+  from = './',
+  to = './',
+  exclude
 }) {
   const {
     files,
     dirs
   } = await (0, _deepTraversalFolder.default)({
     from,
-    exclude: {
-      dir: ['node_modules', '.vscode', 'doc', 'to', 'scripts'],
-      file: []
-    }
+    exclude: getExclusions(exclude)
   });
   await mv(files, to);
   await del(dirs);
+}
+
+function getExclusions(iptExclude) {
+  return {
+    dir: Array.isArray(iptExclude.dir) ? iptExclude.dir : [],
+    file: Array.isArray(iptExclude.file) ? iptExclude.file : []
+  };
 }
 
 async function mv(files, to) {

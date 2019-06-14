@@ -41,7 +41,7 @@ async function main({from, exclude}) {
 }
 
 function getExclusions(iptExclude) {
-  const _default = {dir: [], file: []}
+  const _default = {dir: [], file: []};
   const nativeExclusions = deepmerge(_default, iptExclude);
 
   return {
