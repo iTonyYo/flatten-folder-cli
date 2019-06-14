@@ -21,8 +21,8 @@ $ yarn global add flatten-folder-cli
   $ flatten-folder 选项 [...]
 
 选项
-  --excludeFile, -xf, 定义要忽略的文件
-  --excludeDir, -xd, 定义要忽略的文件夹
+  --excludeFile, -y, 定义要忽略的文件
+  --excludeDir, -z, 定义要忽略的文件夹
   --twd, -d, 可指定工作目录，默认：'process.cwd()'
   --to, -t, 被扁平化文件的存放目录，默认：'process.cwd()'
   --version, -V, 查看版本号
