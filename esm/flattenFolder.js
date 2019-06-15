@@ -13,6 +13,8 @@ var _moveFile = _interopRequireDefault(require("move-file"));
 
 var _trash = _interopRequireDefault(require("trash"));
 
+var _isArray = _interopRequireDefault(require("./utilities/isArray"));
+
 var _deepTraversalFolder = _interopRequireDefault(require("./deepTraversalFolder"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -28,9 +30,9 @@ async function main({
   } = await (0, _deepTraversalFolder.default)({
     from,
     exclude: getExclusions(exclude)
-  }); // await mv(files, to);
-  // await del(dirs);
-
+  });
+  await mv(files, to);
+  await del(dirs);
   return {
     files,
     dirs
@@ -39,8 +41,8 @@ async function main({
 
 function getExclusions(iptExclude) {
   return {
-    dir: Array.isArray(iptExclude.dir) ? iptExclude.dir : [],
-    file: Array.isArray(iptExclude.file) ? iptExclude.file : []
+    dir: (0, _isArray.default)(iptExclude.dir) ? iptExclude.dir : [],
+    file: (0, _isArray.default)(iptExclude.file) ? iptExclude.file : []
   };
 }
 

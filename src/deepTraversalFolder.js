@@ -2,8 +2,8 @@ import { readdir } from 'fs';
 import { promisify } from 'util';
 import path from 'path';
 import each from 'async/each';
-import deepmerge from 'deepmerge';
 
+import merge from './utilities/merge';
 import shouldExclude from './shouldExclude';
 
 const pReadir = promisify(readdir);
@@ -42,7 +42,7 @@ async function main({from, exclude}) {
 
 function getExclusions(iptExclude) {
   const _default = {dir: [], file: []};
-  const nativeExclusions = deepmerge(_default, iptExclude);
+  const nativeExclusions = merge(_default, iptExclude);
 
   return {
     dir: getDirExclusionRegExps(nativeExclusions.dir),

@@ -13,7 +13,7 @@ var _path = _interopRequireDefault(require("path"));
 
 var _each = _interopRequireDefault(require("async/each"));
 
-var _deepmerge = _interopRequireDefault(require("deepmerge"));
+var _merge = _interopRequireDefault(require("./utilities/merge"));
 
 var _shouldExclude = _interopRequireDefault(require("./shouldExclude"));
 
@@ -58,7 +58,7 @@ function getExclusions(iptExclude) {
     dir: [],
     file: []
   };
-  const nativeExclusions = (0, _deepmerge.default)(_default, iptExclude);
+  const nativeExclusions = (0, _merge.default)(_default, iptExclude);
   return {
     dir: getDirExclusionRegExps(nativeExclusions.dir),
     file: getFileExclusionRegExps(nativeExclusions.file)

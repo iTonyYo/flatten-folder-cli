@@ -1,11 +1,15 @@
+import isArray from './utilities/isArray';
+import isNaN from './utilities/isNaN';
+import isNil from './utilities/isNil';
+
 export default (tobe) => {
   let outcome = [];
 
-  if (Array.isArray(tobe)) {
+  if (isArray(tobe)) {
     outcome = tobe;
   }
 
-  if (!Array.isArray(tobe) && !Number.isNaN(tobe) && !(tobe == null)) {
+  if (!isArray(tobe) && !isNaN(tobe) && !isNil(tobe)) {
     outcome = [tobe];
   }
 

@@ -3,6 +3,7 @@ import each from 'async/each';
 import moveFile from 'move-file';
 import trash from 'trash';
 
+import isArray from './utilities/isArray';
 import deepTraversalFolder from './deepTraversalFolder';
 
 async function main({from = './', to = './', exclude}) {
@@ -11,16 +12,16 @@ async function main({from = './', to = './', exclude}) {
     exclude: getExclusions(exclude),
   });
 
-  // await mv(files, to);
-  // await del(dirs);
+  await mv(files, to);
+  await del(dirs);
 
   return { files, dirs };
 }
 
 function getExclusions(iptExclude) {
   return {
-    dir: Array.isArray(iptExclude.dir) ? iptExclude.dir : [],
-    file: Array.isArray(iptExclude.file) ? iptExclude.file : [],
+    dir: isArray(iptExclude.dir) ? iptExclude.dir : [],
+    file: isArray(iptExclude.file) ? iptExclude.file : [],
   };
 }
 
