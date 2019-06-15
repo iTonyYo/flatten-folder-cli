@@ -36,7 +36,5 @@ const resolveRoot = relativePath => resolve(
     { concurrency: 8 },
   );
 
-  console.log(`
-    ${chalk.greenBright('构建成功!')}
-  `);
+  console.log(chalk `{greenBright 构建成功!}`);
 })();

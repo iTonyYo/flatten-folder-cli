@@ -28,9 +28,13 @@ async function main({
   } = await (0, _deepTraversalFolder.default)({
     from,
     exclude: getExclusions(exclude)
-  });
-  await mv(files, to);
-  await del(dirs);
+  }); // await mv(files, to);
+  // await del(dirs);
+
+  return {
+    files,
+    dirs
+  };
 }
 
 function getExclusions(iptExclude) {

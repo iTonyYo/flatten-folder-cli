@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 
 import meow from 'meow';
+import chalk from 'chalk';
+import redent from 'redent';
+import gradient from 'gradient-string';
 import updateNotifier from 'update-notifier';
 
 import getWorkingDirectory from './getWorkingDirectory';
@@ -59,7 +62,7 @@ import arrayWrap from './arrayWrap';
 
     const workingDir = getWorkingDirectory(twd);
 
-    await flattenFolder({
+    const {files, dirs } = await flattenFolder({
       from: workingDir.twd,
       to: to ? to : workingDir.twd,
       exclude: {
@@ -67,6 +70,17 @@ import arrayWrap from './arrayWrap';
         file: arrayWrap(excludeFile),
       },
     });
+
+    console.log(redent(chalk `
+      {greenBright.bold ${gradient.rainbow('操作成功!')}}
+      共有 {bold ${files.length}} 个文件被移动，删除了 {bold ${dirs.length}} 个文件夹。
+
+      {grey 工作目录：}
+      {grey ${workingDir.twd}}
+
+      {grey 将所有文件扁平转移至：}
+      {grey ${to ? to : workingDir.twd}}
+    `));
   } catch (error) {
     throw error;
   }

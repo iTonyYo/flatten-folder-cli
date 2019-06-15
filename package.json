@@ -23,6 +23,7 @@
   "dependencies": {
     "async": "^3.0.1",
     "deepmerge": "^3.2.0",
+    "gradient-string": "^1.2.0",
     "meow": "^5.0.0",
     "move-file": "^1.2.0",
     "redent": "^3.0.0",

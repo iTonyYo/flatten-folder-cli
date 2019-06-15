@@ -3,6 +3,12 @@
 
 var _meow = _interopRequireDefault(require("meow"));
 
+var _chalk = _interopRequireDefault(require("chalk"));
+
+var _redent = _interopRequireDefault(require("redent"));
+
+var _gradientString = _interopRequireDefault(require("gradient-string"));
+
 var _updateNotifier = _interopRequireDefault(require("update-notifier"));
 
 var _getWorkingDirectory = _interopRequireDefault(require("./getWorkingDirectory"));
@@ -70,7 +76,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       excludeFile
     } = flags;
     const workingDir = (0, _getWorkingDirectory.default)(twd);
-    await (0, _flattenFolder.default)({
+    const {
+      files,
+      dirs
+    } = await (0, _flattenFolder.default)({
       from: workingDir.twd,
       to: to ? to : workingDir.twd,
       exclude: {
@@ -78,6 +87,16 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         file: (0, _arrayWrap.default)(excludeFile)
       }
     });
+    console.log((0, _redent.default)(_chalk.default`
+      {greenBright.bold ${_gradientString.default.rainbow('操作成功!')}}
+      共有 {bold ${files.length}} 个文件被移动，删除了 {bold ${dirs.length}} 个文件夹。
+
+      {grey 工作目录：}
+      {grey ${workingDir.twd}}
+
+      {grey 将所有文件扁平转移至：}
+      {grey ${to ? to : workingDir.twd}}
+    `));
   } catch (error) {
     throw error;
   }
