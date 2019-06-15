@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import meow from 'meow';
+import arrify from 'arrify';
 import chalk from 'chalk';
 import redent from 'redent';
 import gradient from 'gradient-string';
@@ -8,7 +9,6 @@ import updateNotifier from 'update-notifier';
 
 import getWorkingDirectory from './getWorkingDirectory';
 import flattenFolder from './flattenFolder';
-import arrayWrap from './arrayWrap';
 
 (async () => {
   try {
@@ -66,8 +66,8 @@ import arrayWrap from './arrayWrap';
       from: workingDir.twd,
       to: to ? to : workingDir.twd,
       exclude: {
-        dir: arrayWrap(excludeDir),
-        file: arrayWrap(excludeFile),
+        dir: arrify(excludeDir),
+        file: arrify(excludeFile),
       },
     });
 

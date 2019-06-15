@@ -3,6 +3,8 @@
 
 var _meow = _interopRequireDefault(require("meow"));
 
+var _arrify = _interopRequireDefault(require("arrify"));
+
 var _chalk = _interopRequireDefault(require("chalk"));
 
 var _redent = _interopRequireDefault(require("redent"));
@@ -14,8 +16,6 @@ var _updateNotifier = _interopRequireDefault(require("update-notifier"));
 var _getWorkingDirectory = _interopRequireDefault(require("./getWorkingDirectory"));
 
 var _flattenFolder = _interopRequireDefault(require("./flattenFolder"));
-
-var _arrayWrap = _interopRequireDefault(require("./arrayWrap"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -83,8 +83,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       from: workingDir.twd,
       to: to ? to : workingDir.twd,
       exclude: {
-        dir: (0, _arrayWrap.default)(excludeDir),
-        file: (0, _arrayWrap.default)(excludeFile)
+        dir: (0, _arrify.default)(excludeDir),
+        file: (0, _arrify.default)(excludeFile)
       }
     });
     console.log((0, _redent.default)(_chalk.default`
