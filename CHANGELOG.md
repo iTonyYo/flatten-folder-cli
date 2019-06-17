@@ -1,5 +1,11 @@
 # [`flatten-folder-cli`][flatten-folder-cli] 更新日志
 
+## [v1.0.2](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.1...v1.0.2) - 2019-06-17
+
+#### 提交
+
+- [[`739eca3`](https://github.com/iTonyYo/flatten-folder-cli/commit/739eca359b4d6531e98122989f4e37e2eaa666cb)] 架构: :building_construction: 使用 `sindresorhus/arrify` 替换内部 `arrayWrap()` 实现，两者相似，前者更完善
+- [[`380efc5`](https://github.com/iTonyYo/flatten-folder-cli/commit/380efc5f5365113c99b57a639051482979382822)] 体验: :children_crossing: 更新使用示例动图
 ## [v1.0.1](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.0...v1.0.1) - 2019-06-15
 
 #### 提交
@@ -9,6 +15,7 @@
 - [[`34f0b50`](https://github.com/iTonyYo/flatten-folder-cli/commit/34f0b50f3166f5bcb5c3b58a9a65ff85f46cf701)] 体验: :children_crossing: 支持命令行操作结果提示 #1
 - [[`c10ab7f`](https://github.com/iTonyYo/flatten-folder-cli/commit/c10ab7fe23cd8f0b68ed17605bb90ba0bcdccd86)] 性能: :racehorse: #5
 - [[`698f8dd`](https://github.com/iTonyYo/flatten-folder-cli/commit/698f8dddafc2a1afd0674bed5c9272c8242dc6f3)] 功能: :gear: 支持自定义存放目录，默认当前工作目录
+- [[`53aa908`](https://github.com/iTonyYo/flatten-folder-cli/commit/53aa908242a26d906a1484c5e3581089c72790a3)] 发版: :bookmark: v1.0.1
 - [[`4ae5613`](https://github.com/iTonyYo/flatten-folder-cli/commit/4ae56136c2d1fcb985a293a66d87090e70427387)] 配置: :wrench: 更新 `忽略` 选项的化名
 - [[`0edfa13`](https://github.com/iTonyYo/flatten-folder-cli/commit/0edfa130d31cfed392f8967628dda97483914bf3)] 文档: :memo: 更新 README.md
 ## v1.0.0 - 2019-06-14
