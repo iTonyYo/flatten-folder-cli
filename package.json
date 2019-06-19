@@ -23,7 +23,7 @@
   "dependencies": {
     "arrify": "^2.0.1",
     "async": "^3.0.1",
-    "deepmerge": "^3.2.0",
+    "deepmerge": "^3.2.1",
     "gradient-string": "^1.2.0",
     "meow": "^5.0.0",
     "move-file": "^1.2.0",
@@ -38,7 +38,7 @@
     "@babel/node": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "auto-changelog": "1.13.0",
-    "babel-eslint": "^10.0.1",
+    "babel-eslint": "^10.0.2",
     "babel-plugin-add-module-exports": "^1.0.2",
     "benchmark": "^2.1.4",
     "chai": "^4.2.0",
@@ -46,7 +46,7 @@
     "cross-env": "^5.2.0",
     "eslint": "^5.16.0",
     "execa": "^1.0.0",
-    "fast-glob": "^2.2.7",
+    "fast-glob": "^3.0.1",
     "license-checker": "^25.0.1",
     "listr": "^0.14.3",
     "make-dir": "^3.0.0",
@@ -54,7 +54,9 @@
     "mocha": "^6.1.4",
     "nyc": "^14.1.1",
     "p-map": "^2.1.0",
-    "write-file-atomic": "^3.0.0"
+    "shortid": "^2.2.14",
+    "write-file-atomic": "^3.0.0",
+    "yallist": "^3.0.3"
   },
   "keywords": [
     "folder",

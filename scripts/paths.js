@@ -7,4 +7,5 @@ const resolveCwd   = relativePath => resolve(appDirectory, relativePath);
 module.exports = {
   appDirectory,
   resolveCwd,
+  docsPath: resolveCwd('docs'),
 };

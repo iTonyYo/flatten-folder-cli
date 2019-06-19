@@ -38,7 +38,7 @@
 "decamelize@1.2.0","MIT","https://github.com/sindresorhus/decamelize"
 "decompress-response@3.3.0","MIT","https://github.com/sindresorhus/decompress-response"
 "deep-extend@0.6.0","MIT","https://github.com/unclechu/node-deep-extend"
-"deepmerge@3.2.0","MIT","https://github.com/TehShrike/deepmerge"
+"deepmerge@3.2.1","MIT","https://github.com/TehShrike/deepmerge"
 "defer-to-connect@1.0.2","MIT","https://github.com/szmarczak/defer-to-connect"
 "dir-glob@2.2.2","MIT","https://github.com/kevva/dir-glob"
 "dot-prop@4.2.0","MIT","https://github.com/sindresorhus/dot-prop"

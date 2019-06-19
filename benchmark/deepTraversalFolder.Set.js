@@ -3,15 +3,16 @@ const { promisify } = require('util');
 const path = require('path');
 const each = require('async/each');
 
-const merge = require('./utilities/merge');
-const shouldExclude = require('./shouldExclude');
+const merge = require('../esm/utilities/merge');
+const shouldExclude = require('../esm/shouldExclude');
 
 const pReadir = promisify(readdir);
+const empty = new Set();
 
 const dirs = {
-  dirs: [],
+  dirs: empty,
   add: function(dir) {
-    this.dirs.push(dir);
+    this.dirs.add(dir);
   },
   getAll: function() {
     return this.dirs;
@@ -19,9 +20,9 @@ const dirs = {
 };
 
 const files = {
-  files: [],
+  files: empty,
   add: function(file) {
-    this.files.push(file);
+    this.files.add(file);
   },
   getAll: function() {
     return this.files;

@@ -2,14 +2,15 @@ const { readdir } = require('fs');
 const { promisify } = require('util');
 const path = require('path');
 const each = require('async/each');
+const yallist = require('yallist');
 
-const merge = require('./utilities/merge');
-const shouldExclude = require('./shouldExclude');
+const merge = require('../esm/utilities/merge');
+const shouldExclude = require('../esm/shouldExclude');
 
 const pReadir = promisify(readdir);
 
 const dirs = {
-  dirs: [],
+  dirs: yallist.create([]),
   add: function(dir) {
     this.dirs.push(dir);
   },
@@ -19,7 +20,7 @@ const dirs = {
 };
 
 const files = {
-  files: [],
+  files: yallist.create([]),
   add: function(file) {
     this.files.push(file);
   },

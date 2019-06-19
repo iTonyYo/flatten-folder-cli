@@ -1,25 +1,22 @@
 "use strict";
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
+const {
+  readdir
+} = require('fs');
 
-var _fs = require("fs");
+const {
+  promisify
+} = require('util');
 
-var _util = require("util");
+const path = require('path');
 
-var _path = _interopRequireDefault(require("path"));
+const each = require('async/each');
 
-var _each = _interopRequireDefault(require("async/each"));
+const merge = require('./utilities/merge');
 
-var _merge = _interopRequireDefault(require("./utilities/merge"));
+const shouldExclude = require('./shouldExclude');
 
-var _shouldExclude = _interopRequireDefault(require("./shouldExclude"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-const pReadir = (0, _util.promisify)(_fs.readdir);
+const pReadir = promisify(readdir);
 const dirs = {
   dirs: [],
   add: function (dir) {
@@ -58,7 +55,7 @@ function getExclusions(iptExclude) {
     dir: [],
     file: []
   };
-  const nativeExclusions = (0, _merge.default)(_default, iptExclude);
+  const nativeExclusions = merge(_default, iptExclude);
   return {
     dir: getDirExclusionRegExps(nativeExclusions.dir),
     file: getFileExclusionRegExps(nativeExclusions.file)
@@ -72,25 +69,25 @@ async function traversalFolder({
   const root = await pReadir(from, {
     withFileTypes: true
   });
-  await (0, _each.default)(root, async content => {
+  await each(root, async content => {
     if (content.isDirectory()) {
-      if ((0, _shouldExclude.default)(content.name, exclude.dir)) {
+      if (shouldExclude(content.name, exclude.dir)) {
         return;
       }
 
-      dirs.add(_path.default.join(from, content.name));
+      dirs.add(path.join(from, content.name));
       await traversalFolder({
-        from: _path.default.join(from, content.name),
+        from: path.join(from, content.name),
         exclude
       });
       return;
     }
 
-    if ((0, _shouldExclude.default)(content.name, exclude.file)) {
+    if (shouldExclude(content.name, exclude.file)) {
       return;
     }
 
-    files.add(_path.default.join(from, content.name));
+    files.add(path.join(from, content.name));
     return;
   });
 }
@@ -107,6 +104,4 @@ function getFileExclusionRegExps(fileExclusions) {
   });
 }
 
-var _default2 = main;
-exports.default = _default2;
-module.exports = exports.default;
+module.exports = main;
