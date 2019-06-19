@@ -1,3 +1,5 @@
+[![Package Quality](https://npm.packagequality.com/shield/flatten-folder-cli.svg)](https://packagequality.com/#?package=flatten-folder-cli) [![dependencies Status](https://david-dm.org/itonyyo/flatten-folder-cli/status.svg)](https://david-dm.org/itonyyo/flatten-folder-cli)
+
 # $ flatten-folder
 
 递归扁平化指定文件夹内所有文件。
