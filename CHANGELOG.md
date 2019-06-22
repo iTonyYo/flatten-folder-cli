@@ -1,10 +1,18 @@
 # [`flatten-folder-cli`][flatten-folder-cli] 更新日志
 
+## [v1.0.3](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.2...v1.0.3) - 2019-06-22
+
+#### 提交
+
+- [[`e08f862`](https://github.com/iTonyYo/flatten-folder-cli/commit/e08f86258849d44dcec5dd4d79c8e2968ba6f36a)] 性能: :racehorse: 新增若干性能测试用例
+- [[`fb2fc77`](https://github.com/iTonyYo/flatten-folder-cli/commit/fb2fc77fa5cfa714067d6f3fc4ff5a8568890ac8)] 依赖: :package: 升级 `deepmerge` 到 `v3.3.0`
+- [[`244f285`](https://github.com/iTonyYo/flatten-folder-cli/commit/244f28568fd12e4c3c762d803d1159d099c487f6)] 文档: :memo: 添置软件包质量、主要第三方依赖状态 2 个徽章
 ## [v1.0.2](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.1...v1.0.2) - 2019-06-17
 
 #### 提交
 
 - [[`739eca3`](https://github.com/iTonyYo/flatten-folder-cli/commit/739eca359b4d6531e98122989f4e37e2eaa666cb)] 架构: :building_construction: 使用 `sindresorhus/arrify` 替换内部 `arrayWrap()` 实现，两者相似，前者更完善
+- [[`e9c5da0`](https://github.com/iTonyYo/flatten-folder-cli/commit/e9c5da0c37cb61fc36885ecb9f7bcaecfdb72422)] 发版: :bookmark: v1.0.2
 - [[`380efc5`](https://github.com/iTonyYo/flatten-folder-cli/commit/380efc5f5365113c99b57a639051482979382822)] 体验: :children_crossing: 更新使用示例动图
 ## [v1.0.1](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.0...v1.0.1) - 2019-06-15
 
