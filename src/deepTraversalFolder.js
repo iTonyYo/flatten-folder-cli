@@ -1,7 +1,7 @@
 const { readdir } = require('fs');
 const { promisify } = require('util');
 const path = require('path');
-const each = require('async/each');
+const eachLimit = require('async/eachLimit');
 
 const merge = require('./utilities/merge');
 const shouldExclude = require('./shouldExclude');
@@ -55,7 +55,7 @@ async function traversalFolder({from, exclude}) {
     withFileTypes: true,
   });
 
-  await each(root, async (content) => {
+  await eachLimit(root, 8, async (content) => {
     if (content.isDirectory()) {
       if (shouldExclude(content.name, exclude.dir)) {
         return;

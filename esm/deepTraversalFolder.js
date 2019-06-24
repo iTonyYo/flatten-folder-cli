@@ -10,7 +10,7 @@ const {
 
 const path = require('path');
 
-const each = require('async/each');
+const eachLimit = require('async/eachLimit');
 
 const merge = require('./utilities/merge');
 
@@ -69,7 +69,7 @@ async function traversalFolder({
   const root = await pReadir(from, {
     withFileTypes: true
   });
-  await each(root, async content => {
+  await eachLimit(root, 8, async content => {
     if (content.isDirectory()) {
       if (shouldExclude(content.name, exclude.dir)) {
         return;
