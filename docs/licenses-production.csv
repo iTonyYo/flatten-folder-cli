@@ -13,7 +13,7 @@
 "array-uniq@1.0.3","MIT","https://github.com/sindresorhus/array-uniq"
 "arrify@1.0.1","MIT","https://github.com/sindresorhus/arrify"
 "arrify@2.0.1","MIT","https://github.com/sindresorhus/arrify"
-"async@3.0.1","MIT","https://github.com/caolan/async"
+"async@3.1.0","MIT","https://github.com/caolan/async"
 "balanced-match@1.0.0","MIT","https://github.com/juliangruber/balanced-match"
 "boxen@3.2.0","MIT","https://github.com/sindresorhus/boxen"
 "brace-expansion@1.1.11","MIT","https://github.com/juliangruber/brace-expansion"

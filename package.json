@@ -22,7 +22,7 @@
   "description": "递归扁平化指定文件夹内所有文件。",
   "dependencies": {
     "arrify": "^2.0.1",
-    "async": "^3.0.1",
+    "async": "^3.1.0",
     "deepmerge": "^3.3.0",
     "gradient-string": "^1.2.0",
     "meow": "^5.0.0",
@@ -46,7 +46,7 @@
     "cross-env": "^5.2.0",
     "eslint": "^6.0.0",
     "execa": "^1.0.0",
-    "fast-glob": "^3.0.1",
+    "fast-glob": "^3.0.2",
     "license-checker": "^25.0.1",
     "listr": "^0.14.3",
     "make-dir": "^3.0.0",
