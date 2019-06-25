@@ -177,7 +177,7 @@
 "eslint-scope@4.0.3","BSD-2-Clause","https://github.com/eslint/eslint-scope"
 "eslint-utils@1.3.1","MIT","https://github.com/mysticatea/eslint-utils"
 "eslint-visitor-keys@1.0.0","Apache-2.0","https://github.com/eslint/eslint-visitor-keys"
-"eslint@6.0.0","MIT","https://github.com/eslint/eslint"
+"eslint@6.0.1","MIT","https://github.com/eslint/eslint"
 "espree@6.0.0","BSD-2-Clause","https://github.com/eslint/espree"
 "esprima@4.0.1","BSD-2-Clause","https://github.com/jquery/esprima"
 "esquery@1.0.1","BSD-3-Clause","https://github.com/jrfeenst/esquery"
