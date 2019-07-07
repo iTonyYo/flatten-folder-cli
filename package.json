@@ -31,6 +31,9 @@
     "trash": "^6.0.0",
     "update-notifier": "^3.0.0"
   },
+  "git": {
+    "core.editor": "code"
+  },
   "private": false,
   "devDependencies": {
     "@babel/cli": "^7.4.4",
