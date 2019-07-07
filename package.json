@@ -7,7 +7,7 @@
     "clean": "npx babel-node ./scripts/clean",
     "license": "npx babel-node ./scripts/license",
     "reprepare": "npx babel-node ./scripts/re-prepare",
-    "lint": "npx eslint --cache ./src/**/*.js",
+    "lint": "npx eslint --cache .",
     "test": "cross-env NODE_ENV=test npx babel-node ./scripts/test",
     "changelog": "npx auto-changelog -p"
   },
@@ -34,6 +34,95 @@
   "git": {
     "core.editor": "code"
   },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      "add-module-exports"
+    ]
+  },
+  "auto-changelog": {
+    "output": "CHANGELOG.md",
+    "template": "changelog-template.hbs",
+    "unreleased": true,
+    "commitLimit": false,
+    "includeBranch": [
+      "master"
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "extends": [
+      "eslint:recommended"
+    ],
+    "parser": "babel-eslint",
+    "rules": {
+      "no-console": 0,
+      "no-undef": 0,
+      "no-class-assign": 0,
+      "no-useless-catch": 0
+    }
+  },
+  "eslintIgnore": [
+    "benchmark/**",
+    "docs/**",
+    "*-test.js",
+    "esm/**",
+    ".github/**",
+    ".vscode/**",
+    "scripts/**"
+  ],
+  "mocha": {
+    "extension": ["js"],
+    "timeout": 120000,
+    "ui": "tdd",
+    "color": true,
+    "delay": true,
+    "fullStackTrace": true,
+    "checkLeaks": true,
+    "retries": 2
+  },
+  "nyc": {
+    "all": true,
+    "check-coverage": false,
+    "per-file": true,
+    "reporter": ["html"],
+    "report-dir": "./docs/coverage",
+    "cache": false,
+    "exclude": [
+      "esm/**",
+      "benchmark/**",
+      "docs/**",
+      "scripts/**"
+    ],
+    "skip-empty": true,
+    "clean": true
+  },
+  "gitignore": [
+    "macOS",
+    "Windows",
+    "Linux",
+    "Node",
+    "VisualStudioCode",
+    "SublimeText",
+    "CVS",
+    "Diff",
+    "Vim",
+    "TortoiseGit",
+    "Diff",
+    "Patch"
+  ],
   "private": false,
   "devDependencies": {
     "@babel/cli": "^7.5.0",

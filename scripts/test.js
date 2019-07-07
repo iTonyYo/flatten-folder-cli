@@ -5,11 +5,12 @@ import execa from 'execa';
   try {
     const result = await execa('npx', [
       'nyc',
+      '--require',
+      '@babel/register',
       'mocha',
       '--require',
       '@babel/register',
       '--no-opts',
-      '--no-package',
       'src/**/?(*.)+(spec|test).[tj]s?(x)',
     ]);
 
