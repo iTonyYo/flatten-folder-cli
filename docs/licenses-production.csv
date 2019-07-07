@@ -50,7 +50,7 @@
 "execa@0.2.2","MIT","https://github.com/sindresorhus/execa"
 "execa@0.7.0","MIT","https://github.com/sindresorhus/execa"
 "find-up@2.1.0","MIT","https://github.com/sindresorhus/find-up"
-"flatten-folder-cli@1.0.4","MIT","https://github.com/iTonyYo/flatten-folder-cli"
+"flatten-folder-cli@1.0.5","MIT","https://github.com/iTonyYo/flatten-folder-cli"
 "fs.realpath@1.0.0","ISC","https://github.com/isaacs/fs.realpath"
 "get-stream@3.0.0","MIT","https://github.com/sindresorhus/get-stream"
 "get-stream@4.1.0","MIT","https://github.com/sindresorhus/get-stream"

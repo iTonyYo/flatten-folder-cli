@@ -1,5 +1,14 @@
 # [`flatten-folder-cli`][flatten-folder-cli] 更新日志
 
+## [v1.0.5](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.4...v1.0.5) - 2019-07-07
+
+#### 提交
+
+- [[`b1f888a`](https://github.com/iTonyYo/flatten-folder-cli/commit/b1f888a5d45c82d93fde28430894e03efdcdeb3b)] 配置: :wrench: 更新 `Code Climate` 忽略规则
+- [[`b2423d6`](https://github.com/iTonyYo/flatten-folder-cli/commit/b2423d635997e13cd649950efc090459569aa3dc)] 配置: :wrench: 更新 `Code Climate` 忽略规则
+- [[`d10c8fc`](https://github.com/iTonyYo/flatten-folder-cli/commit/d10c8fc5b662235ca95e9e4f54994c8ff4c5040b)] 文档: :memo: 新增 `重构: :recycle:` 提交主题
+- [[`d6c85f0`](https://github.com/iTonyYo/flatten-folder-cli/commit/d6c85f08f7fabed32ccafe1b781f6903332017e4)] 配置: :wrench: 让 `Code Climate` 忽略单元测试文件
+- [[`2abdf60`](https://github.com/iTonyYo/flatten-folder-cli/commit/2abdf6071dc424ae9304a89b632435692d38c952)] 配置: :wrench: 让 `Code Climate` 忽略单元测试文件
 ## [v1.0.4](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.3...v1.0.4) - 2019-07-07
 
 #### 提交
@@ -7,6 +16,7 @@
 - [[`7628815`](https://github.com/iTonyYo/flatten-folder-cli/commit/7628815aeb2d957f7e6749479c911783ca93282b)] 依赖: :package: update-notifier v3.0.0 -> v3.0.1
 - [[`ef34a3a`](https://github.com/iTonyYo/flatten-folder-cli/commit/ef34a3a3b127e00b953c9bb9892a0304f3b94982)] 配置: :wrench: 直接在 `package.json` 文件中配置 `babel`、`eslint`、`auto-changelog`、`gitignore`、`nyc`、`mocha`
 - [[`4058836`](https://github.com/iTonyYo/flatten-folder-cli/commit/4058836e2c4b4cd6b78f1096edf515d0b035e181)] 依赖: :package: 升级依赖
+- [[`24e807b`](https://github.com/iTonyYo/flatten-folder-cli/commit/24e807b9bfe3167b6b30f5356f8215249771b927)] 发版: :bookmark: v1.0.4
 - [[`aa0fe40`](https://github.com/iTonyYo/flatten-folder-cli/commit/aa0fe40d3c8935717bffd4dfef20719a942e440e)] 依赖: :package: eslint v6.0.1
 - [[`0826701`](https://github.com/iTonyYo/flatten-folder-cli/commit/082670113279531d148b64076380230a0d3e955e)] 功能: :gear: 限制异步操作的最大数量
 - [[`2c879ff`](https://github.com/iTonyYo/flatten-folder-cli/commit/2c879ff86d4ffff52dfc6e7c5fe6d695f698ab23)] 配置: :wrench: 添加 `Code Climate` 忽略规则
