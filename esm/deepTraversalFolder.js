@@ -16,25 +16,11 @@ const merge = require('./utilities/merge');
 
 const shouldExclude = require('./shouldExclude');
 
+const Collection = require('./Collection');
+
 const pReadir = promisify(readdir);
-const dirs = {
-  dirs: [],
-  add: function (dir) {
-    this.dirs.push(dir);
-  },
-  getAll: function () {
-    return this.dirs;
-  }
-};
-const files = {
-  files: [],
-  add: function (file) {
-    this.files.push(file);
-  },
-  getAll: function () {
-    return this.files;
-  }
-};
+const dirs = new Collection();
+const files = new Collection();
 
 async function main({
   from,
