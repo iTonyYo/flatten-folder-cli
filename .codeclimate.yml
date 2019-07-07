@@ -1,5 +1,5 @@
 exclude_patterns:
-- "**/?(*.)+(spec|test).[tj]s"
+- "**/*.test.js"
 - "esm/"
 - "scripts/"
 - "docs/"
