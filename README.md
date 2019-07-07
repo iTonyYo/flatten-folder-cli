@@ -1,4 +1,4 @@
-[![Package Quality](https://npm.packagequality.com/shield/flatten-folder-cli.svg)](https://packagequality.com/#?package=flatten-folder-cli) [![dependencies Status](https://david-dm.org/itonyyo/flatten-folder-cli/status.svg)](https://david-dm.org/itonyyo/flatten-folder-cli)
+[![Package Quality](https://npm.packagequality.com/shield/flatten-folder-cli.svg)](https://packagequality.com/#?package=flatten-folder-cli) [![Maintainability](https://api.codeclimate.com/v1/badges/86eb484de22401b5ee1b/maintainability)](https://codeclimate.com/github/iTonyYo/flatten-folder-cli/maintainability) [![dependencies Status](https://david-dm.org/itonyyo/flatten-folder-cli/status.svg)](https://david-dm.org/itonyyo/flatten-folder-cli)
 
 # $ flatten-folder
 
