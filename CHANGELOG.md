@@ -1,11 +1,24 @@
 # [`flatten-folder-cli`][flatten-folder-cli] 更新日志
 
+## [v1.0.4](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.3...v1.0.4) - 2019-07-07
+
+#### 提交
+
+- [[`7628815`](https://github.com/iTonyYo/flatten-folder-cli/commit/7628815aeb2d957f7e6749479c911783ca93282b)] 依赖: :package: update-notifier v3.0.0 -> v3.0.1
+- [[`ef34a3a`](https://github.com/iTonyYo/flatten-folder-cli/commit/ef34a3a3b127e00b953c9bb9892a0304f3b94982)] 配置: :wrench: 直接在 `package.json` 文件中配置 `babel`、`eslint`、`auto-changelog`、`gitignore`、`nyc`、`mocha`
+- [[`4058836`](https://github.com/iTonyYo/flatten-folder-cli/commit/4058836e2c4b4cd6b78f1096edf515d0b035e181)] 依赖: :package: 升级依赖
+- [[`aa0fe40`](https://github.com/iTonyYo/flatten-folder-cli/commit/aa0fe40d3c8935717bffd4dfef20719a942e440e)] 依赖: :package: eslint v6.0.1
+- [[`0826701`](https://github.com/iTonyYo/flatten-folder-cli/commit/082670113279531d148b64076380230a0d3e955e)] 功能: :gear: 限制异步操作的最大数量
+- [[`2c879ff`](https://github.com/iTonyYo/flatten-folder-cli/commit/2c879ff86d4ffff52dfc6e7c5fe6d695f698ab23)] 配置: :wrench: 添加 `Code Climate` 忽略规则
+- [[`3c17b90`](https://github.com/iTonyYo/flatten-folder-cli/commit/3c17b905e921a56fd92bcc83bc3aa542eaf2c171)] 配置: :wrench: 使用 `iTonyYo/setgit-cli` 配置当前 Git 项目
+- [[`aa352a6`](https://github.com/iTonyYo/flatten-folder-cli/commit/aa352a622086fd6143efc62d7154a476754a7c4f)] 工作流: :railway_track: 添加可维护性徽章
 ## [v1.0.3](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.2...v1.0.3) - 2019-06-22
 
 #### 提交
 
 - [[`e08f862`](https://github.com/iTonyYo/flatten-folder-cli/commit/e08f86258849d44dcec5dd4d79c8e2968ba6f36a)] 性能: :racehorse: 新增若干性能测试用例
 - [[`fb2fc77`](https://github.com/iTonyYo/flatten-folder-cli/commit/fb2fc77fa5cfa714067d6f3fc4ff5a8568890ac8)] 依赖: :package: 升级 `deepmerge` 到 `v3.3.0`
+- [[`624cd90`](https://github.com/iTonyYo/flatten-folder-cli/commit/624cd90b0fcde780fd91358b99b55fffb050310f)] 发版: :bookmark: v1.0.3
 - [[`244f285`](https://github.com/iTonyYo/flatten-folder-cli/commit/244f28568fd12e4c3c762d803d1159d099c487f6)] 文档: :memo: 添置软件包质量、主要第三方依赖状态 2 个徽章
 ## [v1.0.2](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.1...v1.0.2) - 2019-06-17
 
