@@ -29,17 +29,17 @@
     "move-file": "^1.2.0",
     "redent": "^3.0.0",
     "trash": "^6.0.0",
-    "update-notifier": "^3.0.0"
+    "update-notifier": "^3.0.1"
   },
   "git": {
     "core.editor": "code"
   },
   "private": false,
   "devDependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.5",
-    "@babel/node": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.0",
+    "@babel/node": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
     "auto-changelog": "1.13.0",
     "babel-eslint": "^10.0.2",
     "babel-plugin-add-module-exports": "^1.0.2",
@@ -48,8 +48,8 @@
     "chalk": "^2.4.2",
     "cross-env": "^5.2.0",
     "eslint": "^6.0.1",
-    "execa": "^1.0.0",
-    "fast-glob": "^3.0.2",
+    "execa": "^2.0.3",
+    "fast-glob": "^3.0.4",
     "license-checker": "^25.0.1",
     "listr": "^0.14.3",
     "make-dir": "^3.0.0",
