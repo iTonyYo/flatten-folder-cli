@@ -119,7 +119,13 @@ git commit -m '新功能: :tada: 一个新功能' -m '初始提交首页'
 **架构**
 ```shell
 # 架构的修改，无论工程亦或是核心业务。
-架构: :clapper::building_construction:
+架构: :building_construction:
+```
+
+**重构**
+```shell
+# 大范围架构的修改，无论工程亦或是核心业务。
+重构: :recycle:
 ```
 
 **可访问性**
