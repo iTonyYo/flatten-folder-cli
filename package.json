@@ -23,7 +23,7 @@
   "dependencies": {
     "arrify": "^2.0.1",
     "async": "^3.1.0",
-    "deepmerge": "^3.3.0",
+    "deepmerge": "^4.0.0",
     "gradient-string": "^1.2.0",
     "meow": "^5.0.0",
     "move-file": "^1.2.0",
@@ -126,10 +126,10 @@
   "private": false,
   "devDependencies": {
     "@babel/cli": "^7.5.0",
-    "@babel/core": "^7.5.0",
+    "@babel/core": "^7.5.4",
     "@babel/node": "^7.5.0",
-    "@babel/preset-env": "^7.5.0",
-    "auto-changelog": "1.13.0",
+    "@babel/preset-env": "^7.5.4",
+    "auto-changelog": "1.14.1",
     "babel-eslint": "^10.0.2",
     "babel-plugin-add-module-exports": "^1.0.2",
     "benchmark": "^2.1.4",
@@ -145,7 +145,7 @@
     "microtime": "^3.0.0",
     "mocha": "^6.1.4",
     "nyc": "^14.1.1",
-    "p-map": "^2.1.0",
+    "p-map": "^3.0.0",
     "shortid": "^2.2.14",
     "write-file-atomic": "^3.0.0",
     "yallist": "^3.0.3"
