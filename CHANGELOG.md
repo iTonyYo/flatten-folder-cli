@@ -1,9 +1,15 @@
 # [`flatten-folder-cli`][flatten-folder-cli] 更新日志
 
+## [v1.0.6](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.5...v1.0.6) - 2019-07-15
+
+#### 提交
+
+- [[`ab233c5`](https://github.com/iTonyYo/flatten-folder-cli/commit/ab233c5a342707a9e68598173854f3f421605152)] 依赖: :package: deepmerge ^3.3.0 -> ^4.0.0
 ## [v1.0.5](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.4...v1.0.5) - 2019-07-07
 
 #### 提交
 
+- [[`8aebee9`](https://github.com/iTonyYo/flatten-folder-cli/commit/8aebee91e8497f15be9690cabbf2aaeb5201a207)] 发版: :bookmark: v1.0.5
 - [[`b1f888a`](https://github.com/iTonyYo/flatten-folder-cli/commit/b1f888a5d45c82d93fde28430894e03efdcdeb3b)] 配置: :wrench: 更新 `Code Climate` 忽略规则
 - [[`b2423d6`](https://github.com/iTonyYo/flatten-folder-cli/commit/b2423d635997e13cd649950efc090459569aa3dc)] 配置: :wrench: 更新 `Code Climate` 忽略规则
 - [[`d10c8fc`](https://github.com/iTonyYo/flatten-folder-cli/commit/d10c8fc5b662235ca95e9e4f54994c8ff4c5040b)] 文档: :memo: 新增 `重构: :recycle:` 提交主题
