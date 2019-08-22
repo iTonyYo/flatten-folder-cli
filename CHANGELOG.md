@@ -1,10 +1,19 @@
 # [`flatten-folder-cli`][flatten-folder-cli] 更新日志
 
+## [v1.0.7](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.6...v1.0.7) - 2019-08-22
+
+#### 提交
+
+- [[`760caa4`](https://github.com/iTonyYo/flatten-folder-cli/commit/760caa474144aaec77f0259eb767ca9c03a1bfa5)] 依赖: :arrow_up: 更新依赖
+- [[`60be498`](https://github.com/iTonyYo/flatten-folder-cli/commit/60be49882f26b937544da0ed0729c6a277a6c429)] 文案: :speech_balloon: 更新 `--help` 提示中使用示例
+- [[`113f9d7`](https://github.com/iTonyYo/flatten-folder-cli/commit/113f9d752b0e678520d538e786d56e2b4de53904)] 文档: :memo: 更新 Git 提交指南
+- [[`468b2e3`](https://github.com/iTonyYo/flatten-folder-cli/commit/468b2e35ad05fdde1e333a9a4858425147224da8)] 工作流: :railway_track: 调整 `build` 构建指令，转换 `./esm/cli.js` 为可执行文件
 ## [v1.0.6](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.5...v1.0.6) - 2019-07-15
 
 #### 提交
 
 - [[`ab233c5`](https://github.com/iTonyYo/flatten-folder-cli/commit/ab233c5a342707a9e68598173854f3f421605152)] 依赖: :package: deepmerge ^3.3.0 -> ^4.0.0
+- [[`c132a1a`](https://github.com/iTonyYo/flatten-folder-cli/commit/c132a1a00752256a040e0cfb90346e9b926555c6)] 发版: :bookmark: v1.0.6
 ## [v1.0.5](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.4...v1.0.5) - 2019-07-07
 
 #### 提交
