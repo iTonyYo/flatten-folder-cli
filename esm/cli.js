@@ -26,15 +26,16 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         $ flatten-folder 选项 [...]
 
       选项
-        --excludeFile, -y, 定义要忽略的文件
-        --excludeDir, -z, 定义要忽略的文件夹
-        --twd, -d, 可指定工作目录，默认：'process.cwd()'
-        --to, -t, 被扁平化文件的存放目录，默认：'process.cwd()'
-        --version, -V, 查看版本号
-        --help, -h, 查看帮助
+        --excludeFile, -y,                   定义要忽略的文件
+        --excludeDir, -z,                    定义要忽略的文件夹
+        --twd, -d,                           可指定工作目录，默认：'process.cwd()'
+        --to, -t,                            被扁平化文件的存放目录，默认：'process.cwd()'
+        --version, -V,                       查看版本号
+        --help, -h,                          查看帮助
 
       示例
-        $ flatten-folder
+        $ flatten-folder                     扁平当前文件夹
+        $ flatten-folder -d /usr -t /usr     扁平 ` / usr` 文件夹
     `, {
       flags: {
         twd: {
