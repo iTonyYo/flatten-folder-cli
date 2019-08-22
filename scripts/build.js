@@ -44,6 +44,8 @@ async function getSrcs() {
       return;
     }, { concurrency: 8 });
 
+    await execa('chmod', ['+x', resolveCwd('esm/cli.js')]);
+
     console.log(chalk `{greenBright 构建成功!}`);
   } catch (err) {
     throw(err);
