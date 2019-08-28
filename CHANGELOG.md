@@ -1,5 +1,10 @@
 # [`flatten-folder-cli`][flatten-folder-cli] 更新日志
 
+## [v1.0.8](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.7...v1.0.8) - 2019-08-28
+
+#### 提交
+
+- [[`1a40b9b`](https://github.com/iTonyYo/flatten-folder-cli/commit/1a40b9ba7a3a828d904645f3eaceb715bbf379e9)] 修复: :bug: 解决 `cli.js` 报出的 `ReferenceError: usr is not defined` 问题
 ## [v1.0.7](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.6...v1.0.7) - 2019-08-22
 
 #### 提交
@@ -7,6 +12,7 @@
 - [[`760caa4`](https://github.com/iTonyYo/flatten-folder-cli/commit/760caa474144aaec77f0259eb767ca9c03a1bfa5)] 依赖: :arrow_up: 更新依赖
 - [[`60be498`](https://github.com/iTonyYo/flatten-folder-cli/commit/60be49882f26b937544da0ed0729c6a277a6c429)] 文案: :speech_balloon: 更新 `--help` 提示中使用示例
 - [[`113f9d7`](https://github.com/iTonyYo/flatten-folder-cli/commit/113f9d752b0e678520d538e786d56e2b4de53904)] 文档: :memo: 更新 Git 提交指南
+- [[`e2a5f12`](https://github.com/iTonyYo/flatten-folder-cli/commit/e2a5f1223387592d091d541e66a6c56b8d51d882)] 发版: :bookmark: v1.0.7
 - [[`468b2e3`](https://github.com/iTonyYo/flatten-folder-cli/commit/468b2e35ad05fdde1e333a9a4858425147224da8)] 工作流: :railway_track: 调整 `build` 构建指令，转换 `./esm/cli.js` 为可执行文件
 ## [v1.0.6](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.5...v1.0.6) - 2019-07-15
 
