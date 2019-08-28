@@ -3,6 +3,7 @@
     "flatten-folder": "esm/cli.js"
   },
   "scripts": {
+    "cli": "./esm/cli.js --help",
     "build": "npx babel-node ./scripts/clean-built && npx babel-node ./scripts/build",
     "clean": "npx babel-node ./scripts/clean",
     "license": "npx babel-node ./scripts/license",

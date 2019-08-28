@@ -26,7 +26,7 @@ import flattenFolder from './flattenFolder';
 
       示例
         $ flatten-folder                     扁平当前文件夹
-        $ flatten-folder -d /usr -t /usr     扁平 `/usr` 文件夹
+        $ flatten-folder -d /usr -t /usr     扁平 \`/usr\` 文件夹
     `, {
       flags: {
         twd: {
