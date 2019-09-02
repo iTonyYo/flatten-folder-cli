@@ -24,6 +24,7 @@
   "dependencies": {
     "arrify": "^2.0.1",
     "async": "^3.1.0",
+    "deep-scan-dir": "^1.0.2",
     "deepmerge": "^4.0.0",
     "gradient-string": "^1.2.0",
     "meow": "^5.0.0",
@@ -85,7 +86,9 @@
     "scripts/**"
   ],
   "mocha": {
-    "extension": ["js"],
+    "extension": [
+      "js"
+    ],
     "timeout": 120000,
     "ui": "tdd",
     "color": true,
@@ -98,7 +101,9 @@
     "all": true,
     "check-coverage": false,
     "per-file": true,
-    "reporter": ["html"],
+    "reporter": [
+      "html"
+    ],
     "report-dir": "./docs/coverage",
     "cache": false,
     "exclude": [
@@ -130,14 +135,14 @@
     "@babel/core": "^7.5.5",
     "@babel/node": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
-    "auto-changelog": "1.15.0",
-    "babel-eslint": "^10.0.2",
+    "auto-changelog": "1.16.0",
+    "babel-eslint": "^10.0.3",
     "babel-plugin-add-module-exports": "^1.0.2",
     "benchmark": "^2.1.4",
     "chai": "^4.2.0",
     "chalk": "^2.4.2",
-    "cross-env": "^5.2.0",
-    "eslint": "^6.2.1",
+    "cross-env": "^5.2.1",
+    "eslint": "^6.3.0",
     "execa": "^2.0.4",
     "fast-glob": "^3.0.4",
     "license-checker": "^25.0.1",

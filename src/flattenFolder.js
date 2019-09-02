@@ -2,27 +2,18 @@ import { basename, join } from 'path';
 import each from 'async/each';
 import moveFile from 'move-file';
 import trash from 'trash';
-
-import isArray from './utilities/isArray';
-import deepTraversalFolder from './deepTraversalFolder';
+import deepScanDir from 'deep-scan-dir/lib/deepScanDir';
 
 async function main({from = './', to = './', exclude}) {
-  const { files, dirs } = await deepTraversalFolder({
+  const { files, dirs } = await deepScanDir({
     from,
-    exclude: getExclusions(exclude),
+    exclude,
   });
 
   await mv(files, to);
   await del(dirs);
 
   return { files, dirs };
-}
-
-function getExclusions(iptExclude) {
-  return {
-    dir: isArray(iptExclude.dir) ? iptExclude.dir : [],
-    file: isArray(iptExclude.file) ? iptExclude.file : [],
-  };
 }
 
 async function mv(files, to) {
