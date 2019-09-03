@@ -15,7 +15,7 @@ var _updateNotifier = _interopRequireDefault(require("update-notifier"));
 
 var _getWorkingDirectory = _interopRequireDefault(require("./getWorkingDirectory"));
 
-var _flattenFolder = _interopRequireDefault(require("./flattenFolder"));
+var _flattenFolder = _interopRequireDefault(require("flatten-folder"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

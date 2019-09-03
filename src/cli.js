@@ -8,7 +8,7 @@ import gradient from 'gradient-string';
 import updateNotifier from 'update-notifier';
 
 import getWorkingDirectory from './getWorkingDirectory';
-import flattenFolder from './flattenFolder';
+import flattenFolder from 'flatten-folder';
 
 (async () => {
   try {

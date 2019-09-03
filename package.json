@@ -23,14 +23,11 @@
   "description": "递归扁平化指定文件夹内所有文件。",
   "dependencies": {
     "arrify": "^2.0.1",
-    "async": "^3.1.0",
     "deep-scan-dir": "^1.0.2",
-    "deepmerge": "^4.0.0",
+    "flatten-folder": "^1.0.2",
     "gradient-string": "^1.2.0",
     "meow": "^5.0.0",
-    "move-file": "^1.2.0",
     "redent": "^3.0.0",
-    "trash": "^6.0.0",
     "update-notifier": "^3.0.1"
   },
   "git": {
@@ -138,7 +135,6 @@
     "auto-changelog": "1.16.0",
     "babel-eslint": "^10.0.3",
     "babel-plugin-add-module-exports": "^1.0.2",
-    "benchmark": "^2.1.4",
     "chai": "^4.2.0",
     "chalk": "^2.4.2",
     "cross-env": "^5.2.1",
@@ -148,13 +144,11 @@
     "license-checker": "^25.0.1",
     "listr": "^0.14.3",
     "make-dir": "^3.0.0",
-    "microtime": "^3.0.0",
     "mocha": "^6.2.0",
     "nyc": "^14.1.1",
     "p-map": "^3.0.0",
-    "shortid": "^2.2.14",
-    "write-file-atomic": "^3.0.0",
-    "yallist": "^3.0.3"
+    "trash": "^6.0.0",
+    "write-file-atomic": "^3.0.0"
   },
   "keywords": [
     "folder",
