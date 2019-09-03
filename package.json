@@ -151,10 +151,12 @@
     "write-file-atomic": "^3.0.0"
   },
   "keywords": [
+    "flattendir",
     "folder",
     "文件夹",
     "flat",
     "扁平化",
+    "fs",
     "cli",
     "脚手架",
     "scaffold",
