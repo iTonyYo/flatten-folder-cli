@@ -1,9 +1,15 @@
 # [`flatten-folder-cli`][flatten-folder-cli] 更新日志
 
+## [v1.1.0](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.8...v1.1.0) - 2019-09-03
+
+#### 提交
+
+- [[`adb5e83`](https://github.com/iTonyYo/flatten-folder-cli/commit/adb5e83eff9caee63761c00f42aaec0b49a23275)] 配置: :wrench: 更新关键字
 ## [v1.0.8](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.7...v1.0.8) - 2019-08-28
 
 #### 提交
 
+- [[`0cb3b5e`](https://github.com/iTonyYo/flatten-folder-cli/commit/0cb3b5e3846b665dddd029e564daceea09762ead)] 发版: :bookmark: v1.0.8
 - [[`1a40b9b`](https://github.com/iTonyYo/flatten-folder-cli/commit/1a40b9ba7a3a828d904645f3eaceb715bbf379e9)] 修复: :bug: 解决 `cli.js` 报出的 `ReferenceError: usr is not defined` 问题
 ## [v1.0.7](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.6...v1.0.7) - 2019-08-22
 
