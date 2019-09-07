@@ -4,7 +4,7 @@
 
 递归扁平化指定文件夹内所有文件。
 
-![Image of Yaktocat](https://raw.githubusercontent.com/iTonyYo/flatten-folder/master/example.gif)
+![Image of Yaktocat](https://raw.githubusercontent.com/iTonyYo/flatten-folder-cli/master/example.gif)
 
 ## 安装
 
