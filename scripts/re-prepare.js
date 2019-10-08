@@ -31,14 +31,15 @@ const tasks = new Listr([
 
   {
     title: '安装包',
-    task: () => execa('yarn', [
-      'install'
+    task: () => execa('npm', [
+      'i'
     ])
   },
 
   {
     title: '生成包的证书报告',
-    task: () => execa('yarn', [
+    task: () => execa('npm', [
+      'run',
       'license'
     ])
   },

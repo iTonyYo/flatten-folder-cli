@@ -20,6 +20,7 @@ exclude_patterns:
 - "example.gif"
 - "LICENSE.md"
 - "package.json"
+- "package-lock.json"
 - "README.md"
 - "yarn.lock"
 - ".mailmap"
