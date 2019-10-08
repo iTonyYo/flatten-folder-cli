@@ -1,9 +1,15 @@
 # [`flatten-folder-cli`][flatten-folder-cli] 更新日志
 
+## [v1.1.3](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.1.2...v1.1.3) - 2019-10-08
+
+#### 提交
+
+- [[`411039d`](https://github.com/iTonyYo/flatten-folder-cli/commit/411039d7c6ae0740c10ca026839c9022f958ebb8)] 体验: :children_crossing: 通过 `.npmignore` 文件设置打包文件黑名单
 ## [v1.1.2](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.1.1...v1.1.2) - 2019-10-08
 
 #### 提交
 
+- [[`894b519`](https://github.com/iTonyYo/flatten-folder-cli/commit/894b519507f9f241f5f02d78f3bb0dbb090c1e27)] 发版: :bookmark: v1.1.2
 - [[`7be40af`](https://github.com/iTonyYo/flatten-folder-cli/commit/7be40af902674251cc50537b7c9f4a3acb52596c)] 配置: :wrench: 减少打包文件
 ## [v1.1.1](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.1.0...v1.1.1) - 2019-10-08
 
