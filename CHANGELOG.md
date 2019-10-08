@@ -1,10 +1,16 @@
 # [`flatten-folder-cli`][flatten-folder-cli] 更新日志
 
+## [v1.1.2](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.1.1...v1.1.2) - 2019-10-08
+
+#### 提交
+
+- [[`7be40af`](https://github.com/iTonyYo/flatten-folder-cli/commit/7be40af902674251cc50537b7c9f4a3acb52596c)] 配置: :wrench: 减少打包文件
 ## [v1.1.1](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.1.0...v1.1.1) - 2019-10-08
 
 #### 提交
 
 - [[`f7abed5`](https://github.com/iTonyYo/flatten-folder-cli/commit/f7abed5dba41805c56346be17c1c139cceb81057)] 依赖: :arrow_up: 升级依赖
+- [[`a5f67bb`](https://github.com/iTonyYo/flatten-folder-cli/commit/a5f67bbe4a7df9a8f63ed338ee29a1a9a3dae0f8)] 发版: :bookmark: v1.1.1
 - [[`ba43d27`](https://github.com/iTonyYo/flatten-folder-cli/commit/ba43d2726b2be55eb17022a9331048b8961c8c47)] 配置: :wrench: 鉴于项目使用 Yarn 包管理器，故：移除 .npmrc 配置文件
 - [[`8c1a97b`](https://github.com/iTonyYo/flatten-folder-cli/commit/8c1a97b34dbcec01e53a1cdd1a6bc2f3de1e045d)] 文档: :memo: 更新 Gif 图示
 ## [v1.1.0](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.8...v1.1.0) - 2019-09-03
