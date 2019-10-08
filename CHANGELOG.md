@@ -1,9 +1,17 @@
 # [`flatten-folder-cli`][flatten-folder-cli] 更新日志
 
+## [v1.1.1](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.1.0...v1.1.1) - 2019-10-08
+
+#### 提交
+
+- [[`f7abed5`](https://github.com/iTonyYo/flatten-folder-cli/commit/f7abed5dba41805c56346be17c1c139cceb81057)] 依赖: :arrow_up: 升级依赖
+- [[`ba43d27`](https://github.com/iTonyYo/flatten-folder-cli/commit/ba43d2726b2be55eb17022a9331048b8961c8c47)] 配置: :wrench: 鉴于项目使用 Yarn 包管理器，故：移除 .npmrc 配置文件
+- [[`8c1a97b`](https://github.com/iTonyYo/flatten-folder-cli/commit/8c1a97b34dbcec01e53a1cdd1a6bc2f3de1e045d)] 文档: :memo: 更新 Gif 图示
 ## [v1.1.0](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.8...v1.1.0) - 2019-09-03
 
 #### 提交
 
+- [[`2e1411e`](https://github.com/iTonyYo/flatten-folder-cli/commit/2e1411e9eb6b270a834cd6d8de93512acced43ff)] 发版: :bookmark: v1.1.0
 - [[`adb5e83`](https://github.com/iTonyYo/flatten-folder-cli/commit/adb5e83eff9caee63761c00f42aaec0b49a23275)] 配置: :wrench: 更新关键字
 ## [v1.0.8](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.7...v1.0.8) - 2019-08-28
 
@@ -24,7 +32,7 @@
 
 #### 提交
 
-- [[`ab233c5`](https://github.com/iTonyYo/flatten-folder-cli/commit/ab233c5a342707a9e68598173854f3f421605152)] 依赖: :package: deepmerge ^3.3.0 -> ^4.0.0
+- [[`ab233c5`](https://github.com/iTonyYo/flatten-folder-cli/commit/ab233c5a342707a9e68598173854f3f421605152)] 依赖: :package: deepmerge ^3.3.0 -&gt; ^4.0.0
 - [[`c132a1a`](https://github.com/iTonyYo/flatten-folder-cli/commit/c132a1a00752256a040e0cfb90346e9b926555c6)] 发版: :bookmark: v1.0.6
 ## [v1.0.5](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.0.4...v1.0.5) - 2019-07-07
 
@@ -40,7 +48,7 @@
 
 #### 提交
 
-- [[`7628815`](https://github.com/iTonyYo/flatten-folder-cli/commit/7628815aeb2d957f7e6749479c911783ca93282b)] 依赖: :package: update-notifier v3.0.0 -> v3.0.1
+- [[`7628815`](https://github.com/iTonyYo/flatten-folder-cli/commit/7628815aeb2d957f7e6749479c911783ca93282b)] 依赖: :package: update-notifier v3.0.0 -&gt; v3.0.1
 - [[`ef34a3a`](https://github.com/iTonyYo/flatten-folder-cli/commit/ef34a3a3b127e00b953c9bb9892a0304f3b94982)] 配置: :wrench: 直接在 `package.json` 文件中配置 `babel`、`eslint`、`auto-changelog`、`gitignore`、`nyc`、`mocha`
 - [[`4058836`](https://github.com/iTonyYo/flatten-folder-cli/commit/4058836e2c4b4cd6b78f1096edf515d0b035e181)] 依赖: :package: 升级依赖
 - [[`24e807b`](https://github.com/iTonyYo/flatten-folder-cli/commit/24e807b9bfe3167b6b30f5356f8215249771b927)] 发版: :bookmark: v1.0.4
