@@ -5,6 +5,7 @@
 #### 提交
 
 - [[`411039d`](https://github.com/iTonyYo/flatten-folder-cli/commit/411039d7c6ae0740c10ca026839c9022f958ebb8)] 体验: :children_crossing: 通过 `.npmignore` 文件设置打包文件黑名单
+- [[`bcf29ac`](https://github.com/iTonyYo/flatten-folder-cli/commit/bcf29ac1d4de643ce20bc68d58266159c258ae0f)] 发版: :bookmark: v1.1.3
 ## [v1.1.2](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.1.1...v1.1.2) - 2019-10-08
 
 #### 提交
