@@ -1,5 +1,11 @@
 # [`flatten-folder-cli`][flatten-folder-cli] 更新日志
 
+## [v1.1.4](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.1.3...v1.1.4) - 2019-10-08
+
+#### 提交
+
+- [[`ff053f0`](https://github.com/iTonyYo/flatten-folder-cli/commit/ff053f01e37a7d1576d9fec693b7566082ce0335)] 配置: :wrench: 使用 NPM 包管理器
+- [[`03639a0`](https://github.com/iTonyYo/flatten-folder-cli/commit/03639a09465aac82ece12aa3cde1690d852fc25d)] 配置: :wrench: 避免将更新日志打包
 ## [v1.1.3](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.1.2...v1.1.3) - 2019-10-08
 
 #### 提交
