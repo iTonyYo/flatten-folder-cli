@@ -10,7 +10,9 @@
     "reprepare": "npx babel-node ./scripts/re-prepare",
     "lint": "npx eslint --cache .",
     "test": "cross-env NODE_ENV=test npx babel-node ./scripts/test",
-    "changelog": "npx auto-changelog -p"
+    "changelog": "npx auto-changelog -p",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "engines": {
     "node": ">=10.13.0"
@@ -26,7 +28,8 @@
     "gradient-string": "^1.2.0",
     "meow": "^5.0.0",
     "redent": "^3.0.0",
-    "update-notifier": "^3.0.1"
+    "update-notifier": "^3.0.1",
+    "snyk": "^1.258.2"
   },
   "git": {
     "core.editor": "code"
@@ -177,5 +180,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
