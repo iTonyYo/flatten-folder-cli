@@ -1,5 +1,10 @@
 # [`flatten-folder-cli`][flatten-folder-cli] 更新日志
 
+## [v1.1.6](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.1.5...v1.1.6) - 2020-02-11
+
+#### 提交
+
+- [[`c3da46a`](https://github.com/iTonyYo/flatten-folder-cli/commit/c3da46ae2273e31dca16bae9c1fb98a65a61a4cf)] 依赖: :arrow_up: 升级依赖
 ## [v1.1.5](https://github.com/iTonyYo/flatten-folder-cli/compare/v1.1.4...v1.1.5) - 2019-10-08
 
 #### 提交
