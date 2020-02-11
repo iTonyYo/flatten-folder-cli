@@ -22,11 +22,11 @@
   "description": "递归扁平化指定文件夹内所有文件。",
   "dependencies": {
     "arrify": "^2.0.1",
-    "flatten-folder": "^1.0.4",
+    "flatten-folder": "^1.0.5",
     "gradient-string": "^1.2.0",
-    "meow": "^5.0.0",
+    "meow": "^6.0.0",
     "redent": "^3.0.0",
-    "update-notifier": "^3.0.1"
+    "update-notifier": "^4.0.0"
   },
   "git": {
     "core.editor": "code"
@@ -126,27 +126,27 @@
   ],
   "private": false,
   "devDependencies": {
-    "@babel/cli": "^7.6.2",
-    "@babel/core": "^7.6.2",
-    "@babel/node": "^7.6.2",
-    "@babel/preset-env": "^7.6.2",
-    "auto-changelog": "1.16.1",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "auto-changelog": "1.16.2",
     "babel-eslint": "^10.0.3",
     "babel-plugin-add-module-exports": "^1.0.2",
     "chai": "^4.2.0",
-    "chalk": "^2.4.2",
-    "cross-env": "^6.0.3",
-    "eslint": "^6.5.1",
-    "execa": "^2.0.5",
-    "fast-glob": "^3.1.0",
+    "chalk": "^3.0.0",
+    "cross-env": "^7.0.0",
+    "eslint": "^6.8.0",
+    "execa": "^4.0.0",
+    "fast-glob": "^3.1.1",
     "license-checker": "^25.0.1",
     "listr": "^0.14.3",
     "make-dir": "^3.0.0",
-    "mocha": "^6.2.1",
-    "nyc": "^14.1.1",
+    "mocha": "^7.0.1",
+    "nyc": "^15.0.0",
     "p-map": "^3.0.0",
-    "trash": "^6.0.0",
-    "write-file-atomic": "^3.0.0"
+    "trash": "^6.1.1",
+    "write-file-atomic": "^3.0.1"
   },
   "keywords": [
     "flattendir",

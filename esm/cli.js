@@ -88,7 +88,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         file: (0, _arrify.default)(excludeFile)
       }
     });
-    console.log((0, _redent.default)(_chalk.default`
+    console.log((0, _redent.default)((0, _chalk.default)`
       {greenBright.bold ${_gradientString.default.rainbow('操作成功!')}}
       共有 {bold ${files.length}} 个文件被移动，删除了 {bold ${dirs.length}} 个文件夹。
 
