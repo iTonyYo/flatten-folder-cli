@@ -22,7 +22,7 @@
   "description": "递归扁平化指定文件夹内所有文件。",
   "dependencies": {
     "arrify": "^2.0.1",
-    "flatten-folder": "^1.0.5",
+    "flatten-folder": "^1.0.6",
     "gradient-string": "^1.2.0",
     "meow": "^6.0.0",
     "redent": "^3.0.0",
