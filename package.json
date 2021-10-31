@@ -24,7 +24,7 @@
     "arrify": "^2.0.1",
     "flatten-folder": "^1.0.6",
     "gradient-string": "^1.2.0",
-    "meow": "^6.0.0",
+    "meow": "^6.1.0",
     "redent": "^3.0.0",
     "update-notifier": "^4.0.0"
   },
